@@ -1,0 +1,23 @@
+{
+  "name": "saarathibaazar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ai-engine": "npx playwright test runner.spec.ts",
+    "test": "npx playwright test --headed",
+    "tag": "npx playwright test --headed --grep",
+    "build": "tsc",
+    "start": "node dist/server.mjs",
+    "generate-allure": "allure generate allure-results -o allure-report --clean",
+    "open-allure": "npm run generate-allure && allure open allure-report"},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0-beta.12"
+  }
+}
