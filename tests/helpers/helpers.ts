@@ -1,27 +1,34 @@
 
 export default class Helpers {
-    static async waitForStableURL(page, timeout = 10000) {
-        let lastURL = page.url();
-        let stableCount = 0;
+    static async waitForStableURL(page) {
+        await page.waitForFunction(() => {
+            const url = window.location.href;
+            return /\/#\/[\w-]+$/.test(url);
+        }, { timeout: 60000 });
+        await page.waitForTimeout(5000);
+    }
 
-        for (let i = 0; i < timeout / 500; i++) {
-            await page.waitForTimeout(1000);
-            let currentURL = page.url();
+    static async attachScreenshot(page, testInfo) {
+        let screenshot = await page.screenshot();
+        await testInfo.attach('Screenshot', {
+            body: screenshot,
+            contentType: "image/png"
+        })
+    }
 
-            if (currentURL === lastURL) {
-                stableCount++;
-            } else {
-                stableCount = 0; // Reset if URL changed
-            }
-
-            lastURL = currentURL;
-
-            if (stableCount >= 20) {
-                console.log("✅ Navigation has stabilized at:", currentURL);
-                return;
-            }
+    static async queryShadowSelector(page, hostSelector, innerSelector) {
+        const hostHandle = await page.locator(hostSelector).elementHandle();
+        const shadowRoot = await hostHandle.evaluateHandle(el => el.shadowRoot);
+        await page.waitForTimeout(100);
+        const elementHandle = await shadowRoot.asElement().waitForSelector(innerSelector, { timeout: 20000 });
+        if (!elementHandle) {
+            throw new Error(`Element '${innerSelector}' not found in shadow root of '${hostSelector}' after 20s`);
         }
-
-        console.warn("⚠️ Navigation did not stabilize within timeout.");
+        await page.waitForFunction(
+            (el: HTMLElement) => el && el.offsetParent !== null,
+            {},
+            elementHandle
+        );
+        return elementHandle;
     }
 }
