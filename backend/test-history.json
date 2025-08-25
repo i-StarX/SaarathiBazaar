@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2025-08-06T14:32:17.589Z",
+    "passed": 0,
+    "failed": 0,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-06T14:32:30.833Z",
+    "passed": 0,
+    "failed": 0,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-06T14:34:27.761Z",
+    "passed": 0,
+    "failed": 0,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-06T14:34:59.910Z",
+    "passed": 0,
+    "failed": 0,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T05:40:51.242Z",
+    "passed": 0,
+    "failed": 0,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T05:41:37.200Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T05:55:39.310Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T05:55:39.326Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T05:55:40.484Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T05:55:40.493Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:10:17.291Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:10:30.299Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:12:22.295Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:12:22.308Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:12:40.292Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:12:50.287Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:13:05.289Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:13:12.317Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:13:12.332Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  },
+  {
+    "timestamp": "2025-08-07T06:14:05.250Z",
+    "passed": 0,
+    "failed": 1,
+    "inProgress": 0
+  }
+]

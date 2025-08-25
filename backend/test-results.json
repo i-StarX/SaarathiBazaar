@@ -1,0 +1,232 @@
+{
+  "config": {
+    "rootDir": "C:/automation-project/vastix-vep-dashboard",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [["json"]],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/automation-project/vastix-vep-dashboard/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/automation-project/vastix-vep-dashboard",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "playwright\\tests\\login.spec.ts",
+      "file": "playwright/tests/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Vastix Login Test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "expectedStatus": "passed",
+              "status": "unexpected",
+              "results": [
+                {
+                  "status": "failed",
+                  "duration": 3,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist...",
+                    "stack": "Stack trace here..."
+                  },
+                  "errors": [{ "message": "Error: browserType.launch..." }],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T05:41:31.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "playwright\\tests\\checkout.spec.ts",
+      "file": "playwright/tests/checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Checkout Flow Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "expectedStatus": "passed",
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 120,
+                  "error": null,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T05:45:00.000Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "playwright\\tests\\profile.spec.ts",
+      "file": "playwright/tests/profile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "User Profile Update",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "expectedStatus": "passed",
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 60,
+                  "error": null,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T05:50:00.000Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "playwright\\tests\\search.spec.ts",
+      "file": "playwright/tests/search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Search Feature Test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "expectedStatus": "passed",
+              "status": "unexpected",
+              "results": [
+                {
+                  "status": "failed",
+                  "duration": 45,
+                  "error": {
+                    "message": "AssertionError: Search result count mismatch",
+                    "stack": "Stack trace here..."
+                  },
+                  "errors": [{ "message": "AssertionError..." }],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T05:55:00.000Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "playwright\\tests\\logout.spec.ts",
+      "file": "playwright/tests/logout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Logout Functionality",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "expectedStatus": "passed",
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 15,
+                  "error": null,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T06:00:00.000Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-07T05:41:30.514Z",
+    "duration": 1130.2379999999994,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
